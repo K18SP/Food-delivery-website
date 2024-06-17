@@ -1,0 +1,71 @@
+.explore-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 5vw; /* Use margin or padding for spacing */
+}
+
+.explore-menu h1 {
+    color: #262626;
+    font-weight: 600;
+    font-size: 2.5vw; /* Correct unit for font size */
+    margin-left: 0.8vw; /* Adjust margin for spacing */
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+.explore-menu-text {
+    max-width: 60%;
+    color: #0b0b0b; /* Corrected 'columns' to 'color' */
+    margin-left: 0.8vw; /* Adjust margin for spacing */
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+.explore-menu-list {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start of the container */
+    align-items: flex-start; /* Align items to the start of the container */
+    gap: 30px;
+    text-align: left; /* Ensure text is left-aligned */
+    margin: 20px 0;
+    overflow-x: scroll;
+}
+
+.explore-menu-list::-webkit-scrollbar {
+    display: none;
+}
+
+.explore-menu-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start of the container */
+}
+
+.explore-menu-list-item img{
+    width: 7.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+    margin-left: 1.5vw;
+}
+
+.explore-menu-list-item p{
+    margin-top: 10px;
+    color: #010101;
+    font-size: max(1.4vw,16px);
+    cursor: pointer;
+    margin-left: 3vw;
+}
+
+.explore-menu hr{
+    margin-top: 5px;
+    background-color: #e2e2e2;
+    height: 5px;
+    border: none;
+    margin-right: 90px;
+}
+
+.explore-menu-list-item .active{
+    border: 4px solid tomato;
+    padding: 2px;
+}
